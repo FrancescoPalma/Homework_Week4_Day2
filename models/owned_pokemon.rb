@@ -1,5 +1,8 @@
 require( 'pg' )
+<<<<<<< HEAD
 require_relative('../db/sql_runner')
+=======
+>>>>>>> 699c5057a1bc9cefaec9ea78db29061993c35552
 
 class OwnedPokemon
 
@@ -11,6 +14,7 @@ class OwnedPokemon
     @pokemon_id = options['pokemon_id'].to_i
   end
 
+<<<<<<< HEAD
   def trainer()
     Trainer.find(@trainer_id)
     # sql = "SELECT * FROM Trainers where id = #{@trainer_id}"
@@ -23,6 +27,8 @@ class OwnedPokemon
     # Trainer.map_item(sql)
   end
 
+=======
+>>>>>>> 699c5057a1bc9cefaec9ea78db29061993c35552
   def save
     sql = "INSERT INTO OwnedPokemons (
       trainer_id,
